@@ -136,8 +136,6 @@ int main()
         printf("\nWhat do you want to perform?\n");
         printf("ENTER YOUR CHOISE\n1. Insert At Start\n2. Insert At End\n3. DISPLAY LINKED LIST\n4. Delete First node\n5. Delete Last Node\n6. Exit\n");
         scanf("%d",&ch);
-        if(ch>=1 && ch<=6)
-        {
             switch(ch)
             {
                 case 1:
@@ -160,14 +158,11 @@ int main()
                         deleteLastNode(&start);
                         break;
                 case 6:
-                    flag=0;
-                    break;
+                        flag=0;
+                        break;
+                default:
+                        printf("\n🚫Incorrect choice Re-Enter🚫\n\n");
             }
-        }
-        else
-        {
-            printf("\n🚫Incorrect choice Re-Enter🚫\n\n");
-        }
     }
     return 0;
 }
